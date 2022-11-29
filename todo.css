@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url("img/body_img.jpg")no-repeat center center fixed;
+  background-size: cover;
+}
+ul {
+  margin: 70px;
+  padding: 0;
+  box-shadow: 4px 4px 15px 1px black;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  border-radius: 30px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #3c36f4;
+  color: white;
+}
+
+.header {
+  padding: 70px 30px;
+  color: white;
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 15px 1px black;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #CD5C5C;
+  color: rgb(237, 232, 232);
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  border-radius: 30px;
+  box-shadow: 4px 4px 15px 1px black;
+}
+
+.addBtn:hover {
+  background-color: rgb(157, 154, 154);
+}
+
+.date {
+    margin-left: 1533px;
+    padding: 10px;
+    width: 25%;
+}
+.date input {
+  background-color: #F4A460;
+  color: rgb(0, 0, 0);
+  box-shadow: 4px 4px 15px 1px black;
+}
+h1 {
+  color: #ffffff;
+  text-shadow: 7px 7px 20px #000000;
+  border: 4px black ;
+}
+
